@@ -6,16 +6,40 @@
 
     <groupId>com.fixess</groupId>
     <artifactId>jivo-library</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
+    <packaging>jar</packaging>
+
+    <name>JivobotAPI library</name>
+    <description>A library that you can use for creating your Jivo bots.</description>
+    <url>https://github.com/fixesS/jivo-lib</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Eduard Gorshkov</name>
+            <email>eduard.gorshkov.2020@gmail.com</email>
+            <organizationUrl>https://github.com/fixesS</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/fixesS/jivo-lib.git</connection>
+        <developerConnection>scm:git:ssh://github.com:fixesS/jivo-lib.git</developerConnection>
+        <url>http://github.com/fixesS/jivo-lib/tree/master</url>
+    </scm>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.9.0</version>
         </dependency>
-        <!-- https://jarcasting.com/artifacts/org.apache.httpcomponents/httpclient/ -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
@@ -33,6 +57,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>

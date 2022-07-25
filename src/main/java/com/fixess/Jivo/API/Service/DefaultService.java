@@ -11,13 +11,31 @@ import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.IOException;
 
-
+/**
+ * Default implenetation of JivoService
+ * Service for interacting with jivosite.
+ * @author Eduard Gorshkov
+ * @version 1.0
+ * @see com.fixess.Jivo.API.Service.JivoService
+ */
 public class DefaultService implements JivoService {
     private String jivoToken;
 
+    /**
+     * Default constructor.
+     * @param jivoTOken Token for your bot. You cah get it on Jivo website.
+     */
     public DefaultService(String jivoTOken){
         this.jivoToken = jivoTOken;
     }
+
+    /**
+     * Function of sending bot message to chat.
+     * @param botMessage Data holder object. Converts to JSON by Gson.
+     * @throws IOException
+     * @see BotMessage
+     * @see GsonParser
+     */
     @Override
     public void sendBotMessage(BotMessage botMessage) throws IOException {
         String urlAddress = "https://bot.jivosite.com/webhooks/"+jivoToken;
@@ -33,6 +51,13 @@ public class DefaultService implements JivoService {
 
         HttpResponse response = httpClient.execute(request);
     }
+    /**
+     * Function of inviting Agent to chat.
+     * @param inviteAgentMessage Data holder object. Converts to JSON by Gson.
+     * @throws IOException
+     * @see InviteAgentMessage
+     * @see GsonParser
+     */
     @Override
     public void sendInviteAgentMessage(InviteAgentMessage inviteAgentMessage) throws IOException{
         String urlAddress = "https://bot.jivosite.com/webhooks/"+jivoToken;
