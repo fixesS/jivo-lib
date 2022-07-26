@@ -1,5 +1,5 @@
 # jivo-lib
-I worked with Java API a lot, so i thought about my first library.
+I worked with Java Bot API a lot, so I thought about my first library.
 
 # Add to your project
 Maven
@@ -52,4 +52,3 @@ Create new JivoBotApplication
 ```java
 JivoBotApplication jivoBotApplication = new JivoBotApplication(eventManager,8080,"token");
 ```
-
