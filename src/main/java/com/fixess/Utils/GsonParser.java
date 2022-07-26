@@ -8,7 +8,7 @@ import com.google.gson.Gson;
 /**
  * Util class for parse data holder objects to Json.
  * @author Eduard Gorshkov
- * @version 1.0
+ * @version 1.0.2
  */
 public class GsonParser {
     /**

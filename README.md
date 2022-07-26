@@ -1,13 +1,22 @@
 # jivo-lib
 I worked with Java API a lot, so i thought about my first library.
 
+# Add to your project
+Maven
+```xml
+<dependency>
+  <groupId>io.github.fixess</groupId>
+  <artifactId>jivo-lib</artifactId>
+  <version>1.0.2</version>
+</dependency>
+```
 
-## How to use
+# How to use
 
 Create new EventManager
 
 ```java
-EventManager eventManager = new EventManager();
+    EventManager eventManager = new EventManager();
 ```
 Make your impllementation of EventListener(for example EventListenerImpl):
 ```java
