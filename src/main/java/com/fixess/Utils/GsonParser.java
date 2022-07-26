@@ -12,7 +12,7 @@ import com.google.gson.Gson;
  */
 public class GsonParser {
     /**
-     * JSON -> ClientMessage by Gson.
+     * JSON to ClientMessage by Gson.
      * @param json response from jivosite.
      * @return object of ClientMessage.
      * @see ClientMessage
@@ -24,7 +24,7 @@ public class GsonParser {
     }
 
     /**
-     * BotMessage -> JSON by Gson.
+     * BotMessage to JSON by Gson.
      * @param botMessage message to chat.
      * @return JSON of BotMessage.
      * @see BotMessage
@@ -36,7 +36,7 @@ public class GsonParser {
     }
 
     /**
-     * InviteAgentMessage -> JSON by Gson
+     * InviteAgentMessage to JSON by Gson
      * @param inviteAgentMessage
      * @return JSON of InviteAgentMessage
      * @see InviteAgentMessage
