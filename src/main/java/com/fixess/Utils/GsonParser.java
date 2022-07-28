@@ -8,7 +8,7 @@ import com.google.gson.Gson;
 /**
  * Util class for parse data holder objects to Json.
  * @author Eduard Gorshkov
- * @version 1.0.2
+ * @version 1.0.3
  */
 public class GsonParser {
     /**
@@ -17,7 +17,7 @@ public class GsonParser {
      * @return object of ClientMessage.
      * @see ClientMessage
      */
-    public ClientMessage parseClientMessage(String json){
+    public static ClientMessage parseClientMessage(String json){
         Gson gson = new Gson();
         ClientMessage clientMessage = gson.fromJson(json,ClientMessage.class);
         return clientMessage;
@@ -29,7 +29,7 @@ public class GsonParser {
      * @return JSON of BotMessage.
      * @see BotMessage
      */
-    public String parseBotMessageToJson(BotMessage botMessage){
+    public static String parseBotMessageToJson(BotMessage botMessage){
         Gson gson = new Gson();
         String json = gson.toJson(botMessage);
         return json;
@@ -41,7 +41,7 @@ public class GsonParser {
      * @return JSON of InviteAgentMessage
      * @see InviteAgentMessage
      */
-    public String parseInviteAgentMessageToJson(InviteAgentMessage inviteAgentMessage){
+    public static String parseInviteAgentMessageToJson(InviteAgentMessage inviteAgentMessage){
         Gson gson = new Gson();
         String json = gson.toJson(inviteAgentMessage);
         return json;
