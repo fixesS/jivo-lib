@@ -1,5 +1,4 @@
 # jivo-lib
-I worked with Java Bot API a lot, so I thought about my first library.
 
 # Add to your project
 See Latest release
