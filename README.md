@@ -2,14 +2,7 @@
 I worked with Java Bot API a lot, so I thought about my first library.
 
 # Add to your project
-Maven
-```xml
-<dependency>
-  <groupId>io.github.fixess</groupId>
-  <artifactId>jivo-lib</artifactId>
-  <version>1.0.2</version>
-</dependency>
-```
+See Latest release
 
 # How to use
 
