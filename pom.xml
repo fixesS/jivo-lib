@@ -7,6 +7,7 @@
     <groupId>io.github.fixess</groupId>
     <artifactId>jivo-lib</artifactId>
     <version>1.0.3</version>
+    <packaging>jar</packaging>
 
     <profiles>
         <profile>
@@ -99,8 +100,6 @@
         </plugins>
     </build>
 
-    <packaging>jar</packaging>
-
     <name>JivobotAPI library</name>
     <description>A library that you can use for creating your Jivo bots.</description>
     <url>https://github.com/fixesS/jivo-lib</url>
@@ -158,6 +157,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 </project>

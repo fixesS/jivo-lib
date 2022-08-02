@@ -5,6 +5,12 @@ package com.fixess.Utils;
  * @version 1.0
  */
 public class TokenHidder {
+    /**
+     *
+     * @param token - Token for your bot. It's consists of provider id and bot token. You cah get it on Jivo website.
+     * @return string of two parts of token : visible and hidden
+     * @throws Exception
+     */
     public static String hide(String token) throws Exception {
         if(token == ""){
             throw new Exception("Token is empty");
