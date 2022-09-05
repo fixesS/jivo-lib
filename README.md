@@ -34,7 +34,7 @@ public class EventListenerImpl implements EventListener{
 }
 ```
 
-Add your listener to EvenManager
+Add your listener to EventManager
 ```java
 eventManager.addListener(new EventListenerImpl());
 ```
